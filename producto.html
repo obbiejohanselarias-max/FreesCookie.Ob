@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Frees Cookie — Nuestros productos: galletas, chocolates, helados y cafés en Santo Domingo."/>
+  <title>Frees Cookie — Productos</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .video-hero {
+      padding-top: 80px;
+    }
+    .video-hero-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .video-hero-content p {
+      color: rgba(255,255,255,0.8);
+      font-size: 1rem;
+      max-width: 440px;
+    }
+    #chocolates, #helados, #cafes { scroll-margin-top: 200px; }
+
+    .product-price-tag {
+      display: inline-block;
+      background: var(--marino);
+      color: #fff;
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <!-- Logo esquina izquierda -->
+  <a class="nav-logo" href="index.html">
+    <div style="width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+      <span style="font-family:'Playfair Display',serif;color:#ffffff00;font-weight:700;font-size:1rem;"><img src="ChatGPT Image 2 jun 2026, 19_54_28.png"></span>
+    </div>
+    <div>
+      <div class="nav-logo-text">Obbie</div>
+      <div class="nav-logo-sub">Santo Domingo, RD</div>
+    </div>
+  </a>
+
+  <!-- Links -->
+  <ul class="nav-links">
+    <li>
+      <a href="index.html" >
+        <i class="fas fa-house"></i> Home
+      </a>
+    </li>
+    <li class="has-sub">
+      <a href="nosotros.html">
+        <i class="fas fa-globe"></i> Nosotros
+        <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:2px;"></i>
+      </a>
+      <ul class="sub-menu">
+        <li><a href="nosotros.html#Mision"><i class="fas fa-bullseye"></i> Misión</a></li>
+        <li><a href="nosotros.html#Vision"><i class="fas fa-eye"></i> Visión</a></li>
+        <li><a href="nosotros.html#Valores"><i class="fas fa-heart"></i> Valores</a></li>
+      </ul>
+    </li>
+    <li class="has-sub">
+      <a href="producto.html" class="active">
+        <i class="fas fa-shopping-cart"></i> Productos
+        <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:2px;"></i>
+      </a>
+      <ul class="sub-menu">
+        <li><a href="producto.html#chocolates"><i class="fas fa-cookie-bite"></i> Chocolates</a></li>
+        <li><a href="producto.html#helados"><i class="fas fa-ice-cream"></i> Helados</a></li>
+        <li><a href="producto.html#cafes"><i class="fas fa-mug-hot"></i> Cafés</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="registro.html" class="cart-btn">
+        <i class="fas fa-shopping-basket"></i>
+        <span class="cart-badge">0</span>
+      </a>
+    </li>
+    <li>
+      <a href="registro.html" style="background:var(--marina,#879fd3);background:var(--marino);color:#fff!important;border-radius:40px;">
+        <i class="fas fa-user-plus"></i> Registro
+      </a>
+    </li>
+  </ul>
+
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- VIDEO HERO con logo al lado -->
+<section class="video-hero">
+  <!-- Video de fondo simulado con gradiente animado -->
+  <div style="position:absolute;inset:0;;"><video autoplay  loop playsinline><source src="video producto.mp4" type="video/mp4"></video></div>
+  
+  <div class="video-overlay"></div>
+  <div class="video-hero-content">
+    <!-- Logo circular al lado -->
+    <div>
+      <div style="text-align:center;">
+        <div style="font-size:3.5rem;"><img src="ChatGPT Image 3 jun 2026, 01_50_18.png" class="img-flotante-producto"></div>
+      </div>
+    </div>
+    <!-- Texto -->
+    <div>
+      <p style="font-size:0.8rem;letter-spacing:4px;color:rgba(255,255,255,0.75);text-transform:uppercase;margin-bottom:12px;">Menú completo</p>
+      <h2 style="text-shadow: 2px 1px 4px rgb(155, 169, 210);">Nuestros<br>Deliciosos<br>Productos</h2>
+      <p>Chocolates, helados, cafés y postres artesanales elaborados con amor en Santo Domingo.</p>
+      <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;">
+        <a href="#chocolates" style="padding:12px 24px;background:rgba(255,255,255,0.2);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.4);border-radius:40px;color:#fff;text-decoration:none;font-weight:700;font-size:0.85rem;">Ver todo</a>
+        <a href="registro.html" style="padding:12px 24px;background:#fff;border-radius:40px;color:var(--marino);text-decoration:none;font-weight:700;font-size:0.85rem;">Ordenar ahora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BARRA DE BÚSQUEDA + LOGO -->
+<div class="search-bar-row">
+  <span class="page-logo algerian">Frees Cookie</span>
+  <div class="search-input-wrap">
+    <i class="fas fa-search"></i>
+    <input type="text" id="product-search" placeholder="Buscar productos..."/>
+  </div>
+</div>
+
+<!-- SUB-NAV CATEGORÍAS -->
+<div class="products-sub-nav">
+  <button class="cat-btn active" data-filter="todos">Todos</button>
+  <button class="cat-btn" data-filter="chocolates"><i class="fas fa-cookie-bite" style="margin-right:6px;"></i>Chocolates</button>
+  <button class="cat-btn" data-filter="helados"><i class="fas fa-ice-cream" style="margin-right:6px;"></i>Helados</button>
+  <button class="cat-btn" data-filter="cafes"><i class="fas fa-mug-hot" style="margin-right:6px;"></i>Cafés</button>
+  <button class="cat-btn" data-filter="postres"><i class="fas fa-birthday-cake" style="margin-right:6px;"></i>Postres</button>
+</div>
+
+<!-- ── CHOCOLATES ── -->
+<section id="chocolates" class="section section-crema"
+  <div class="section-title fade-up">
+    <p style="font-size:0.8rem;font-weight:700;letter-spacing:3px;color:var(--rosa-deep);text-transform:uppercase;margin-bottom:8px;"><i class="fas fa-cookie-bite"></i> Categoría</p>
+    <h2>Chocolates &amp; Galletas</h2>
+    <p>Nuestras irresistibles creaciones con chocolate</p>
+  </div>
+  <div class="products-grid" id="chocolates-grid">
+
+    <div class="product-card fade-up" data-cat="chocolates">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Crumble Chocolate Dubai.jpg" alt="Crumble Chocolate Dubai" class="img-flotante-producto"></div>
+      <h4>Crumble Chocolate Dubai</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Pistacho · Kataifi · Chocolate belga</p>
+      <div class="price">RD$ 280</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+    <div class="product-card fade-up" data-cat="chocolates">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Cookie Doble Chocolate.jpg" alt="Cookie Doble Chocolate" class="img-flotante-producto"></div>
+      <h4>Cookie Doble Chocolate</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Chips de chocolate negro y blanco</p>
+      <div class="price">RD$ 150</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+    <div class="product-card fade-up" data-cat="chocolates">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Cookie Fresa  Crema.jpg" alt="Cookie Fresa & Crema" class="img-flotante-producto"></div>
+      <h4>Cookie Fresa &amp; Crema</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Fresa natural · Vainilla · Crema suiza</p>
+      <div class="price">RD$ 220</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+    <div class="product-card fade-up" data-cat="chocolates">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Brownie Fudge Especial.jpg" alt="Brownie Fudge Especial" class="img-flotante-producto"></div>
+      <h4>Brownie Fudge Especial</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Nueces · Caramelo salado · Cacao</p>
+      <div class="price">RD$ 200</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── HELADOS ── -->
+<section id="helados" class="section section-azul">
+  <div class="section-title fade-up">
+    <p style="font-size:0.8rem;font-weight:700;letter-spacing:3px;color:var(--marino);text-transform:uppercase;margin-bottom:8px;"><i class="fas fa-ice-cream"></i> Categoría</p>
+    <h2>Helados</h2>
+    <p>Fríos, cremosos y llenos de sabor</p>
+  </div>
+  <div class="products-grid">
+
+    <div class="product-card fade-up" data-cat="helados">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Helado Cookie  Cream.jpg" alt="Helado Cookie & Cream" class="img-flotante-producto"></div>
+      <h4>Helado Cookie &amp; Cream</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Oreo · Vainilla premium · Chips</p>
+      <div class="price">RD$ 190</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+    <div class="product-card fade-up" data-cat="helados">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Helado Fresas  Nata.jpg" alt="Helado Fresas & Nata" class="img-flotante-producto"></div>
+      <h4>Helado Fresas &amp; Nata</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Fresas naturales · Nata fresca</p>
+      <div class="price">RD$ 175</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+    <div class="product-card fade-up" data-cat="helados">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Helado de Mango Tropical.jpg" alt="Helado de Mango Tropical" class="img-flotante-producto"></div>
+      <h4>Helado de Mango Tropical</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Mango dominicano · Limón · Coco</p>
+      <div class="price">RD$ 185</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CAFÉS ── -->
+<section id="cafes" class="section section-verde">
+  <div class="section-title fade-up">
+    <p style="font-size:0.8rem;font-weight:700;letter-spacing:3px;color:var(--marino);text-transform:uppercase;margin-bottom:8px;"><i class="fas fa-mug-hot"></i> Categoría</p>
+    <h2>Cafés Especiales</h2>
+    <p>La combinación perfecta para acompañar tus galletas</p>
+  </div>
+  <div class="products-grid">
+
+    <div class="product-card fade-up" data-cat="cafes">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Café Frappé Cookie.jpg" alt="Café Frappé Cookie" class="img-flotante-producto"></div>
+      <h4>Café Frappé Cookie</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Espresso · Leche helada · Cookie</p>
+      <div class="price">RD$ 350</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+    <div class="product-card fade-up" data-cat="cafes">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Matcha Latte  Cookie.jpg" alt="Matcha Latte & Cookie" class="img-flotante-producto"></div>
+      <h4>Matcha Latte &amp; Cookie</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Matcha ceremonial · Leche de avena</p>
+      <div class="price">RD$ 310</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+    <div class="product-card fade-up" data-cat="cafes">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Caramel Latte Cookie.jpg" alt="Caramel Latte Cookie" class="img-flotante-producto"></div>
+      <h4>Caramel Latte Cookie</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Espresso · Caramelo · Leche entera</p>
+      <div class="price">RD$ 290</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+    <div class="product-card fade-up" data-cat="cafes">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Cold Brew Premium.png" alt="Cold Brew Premium" class="img-flotante-producto"></div>
+      <h4>Cold Brew Premium</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">24h maceración · Vainilla · Hielo</p>
+      <div class="price">RD$ 275</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── POSTRES ── -->
+<section class="section section-rosa">
+  <div class="section-title fade-up">
+    <p style="font-size:0.8rem;font-weight:700;letter-spacing:3px;color:var(--marino);text-transform:uppercase;margin-bottom:8px;"><i class="fas fa-birthday-cake"></i> Categoría</p>
+    <h2>Postres del Día</h2>
+    <p>Creaciones especiales que cambian con la temporada</p>
+  </div>
+  <div class="products-grid">
+
+    <div class="product-card fade-up" data-cat="postres">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Postre Cheesecake Berry.jpg" alt="Cheesecake Berry" class="img-flotante-producto"></div>
+      <h4>Cheesecake Berry</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Frutos rojos · Queso Philadelphia</p>
+      <div class="price">RD$ 320</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+    <div class="product-card fade-up" data-cat="postres">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Pudín de Caramelo.jpg" alt="Pudín de Caramelo" class="img-flotante-producto"></div>
+      <h4>Pudín de Caramelo</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Caramelo artesanal · Vainilla</p>
+      <div class="price">RD$ 160</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+    <div class="product-card fade-up" data-cat="postres">
+      <div style="width:100%;height:160px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:14px;"><img src="Cupcake Vainilla  Rosa.jpg" alt="Cupcake Vainilla & Rosa" class="img-flotante-producto"></div>
+      <h4>Cupcake Vainilla &amp; Rosa</h4>
+      <p style="font-size:0.8rem;color:var(--gris);margin-bottom:8px;">Buttercream · Sprinkles · Vainilla</p>
+      <div class="price">RD$ 140</div>
+      <button class="add-cart-btn"><i class="fas fa-cart-plus"></i> Añadir al carrito</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3 class="algerian">Frees Cookie</h3>
+      <p>Cafetería artesanal en el corazón del Distrito Nacional. Galletas crumble, postres gourmet y cafés especiales.</p>
+      <div class="social-links" style="margin-top:20px;">
+        <a href="https://www.instagram.com/freescookie_01?igsh=MTE1ZjNzbTZwYjRiYQ%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/8097711732" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/@freezcookie_01?lang=es-419" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-house" style="width:16px;margin-right:6px;"></i>Inicio</a></li>
+        <li><a href="nosotros.html"><i class="fas fa-globe" style="width:16px;margin-right:6px;"></i>Nosotros</a></li>
+        <li><a href="producto.html"><i class="fas fa-cookie-bite" style="width:16px;margin-right:6px;"></i>Productos</a></li>
+        <li><a href="registro.html"><i class="fas fa-user-plus" style="width:16px;margin-right:6px;"></i>Registro</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Categorías</h4>
+      <ul>
+        <li><a href="#chocolates">Chocolates &amp; Galletas</a></li>
+        <li><a href="#helados">Helados</a></li>
+        <li><a href="#cafes">Cafés Especiales</a></li>
+        <li><a href="#postres">Postres del Día</a></li>
+      </ul>
+    </div>
+    
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Frees Cookie · Obbie Johansel Arias · Distrito Nacional, Santo Domingo, República Dominicana</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

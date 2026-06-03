@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Conoce a Frees Cookie — Misión, Visión y Valores de nuestra cafetería artesanal en Santo Domingo."/>
+  <title>Frees Cookie — Sobre Nosotros</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 28px;
+      padding: 48px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .value-card {
+      background: var(--blanco);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: var(--sombra);
+      border-top: 4px solid var(--rosa-deep);
+      transition: transform 0.3s;
+    }
+    .value-card:nth-child(2) { border-top-color: var(--verde-deep); }
+    .value-card:nth-child(3) { border-top-color: var(--azul-deep); }
+    .value-card:nth-child(4) { border-top-color: var(--marino); }
+    .value-card:nth-child(5) { border-top-color: var(--rosa-deep); }
+    .value-card:hover { transform: translateY(-8px); }
+    .value-icon {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: var(--azul);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+      margin: 0 auto 20px;
+    }
+    .value-card:nth-child(1) .value-icon { background: var(--rosa); }
+    .value-card:nth-child(2) .value-icon { background: var(--verde); }
+    .value-card:nth-child(3) .value-icon { background: var(--azul); }
+    .value-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--marino);
+      margin-bottom: 10px;
+    }
+    .value-card p { font-size: 0.9rem; color: var(--gris); line-height: 1.7; }
+
+    .team-section {
+      background: var(--marino);
+      padding: 80px 48px;
+      text-align: center;
+    }
+    .team-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      color: #fff;
+      margin-bottom: 48px;
+    }
+    .team-card {
+      background: rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 36px 24px;
+      max-width: 340px;
+      margin: 0 auto;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .team-avatar {
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--rosa), var(--azul));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.5rem;
+      margin: 0 auto 20px;
+      border: 3px solid rgba(255,255,255,0.3);
+    }
+    .team-card h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #fff; }
+    .team-card p { color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 8px; }
+    .team-badge {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 6px 16px;
+      background: var(--rosa);
+      color: var(--marino);
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    /* Sección misión/visión */
+    #mision, #vision, #valores { scroll-margin-top: 160px; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <!-- Logo esquina izquierda -->
+  <a class="nav-logo" href="index.html">
+    <div style="width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+      <span style="font-family:'Playfair Display',serif;color:#ffffff00;font-weight:700;font-size:1rem;"><img src="ChatGPT Image 2 jun 2026, 19_54_28.png"></span>
+    </div>
+    <div>
+      <div class="nav-logo-text">Obbie</div>
+      <div class="nav-logo-sub">Santo Domingo, RD</div>
+    </div>
+  </a>
+
+  <!-- Links -->
+  <ul class="nav-links">
+    <li>
+      <a href="index.html" >
+        <i class="fas fa-house"></i> Home
+      </a>
+    </li>
+    <li class="has-sub">
+      <a href="nosotros.html" class="active">
+        <i class="fas fa-globe"></i> Nosotros
+        <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:2px;"></i>
+      </a>
+      <ul class="sub-menu">
+        <li><a href="nosotros.html#Mision"><i class="fas fa-bullseye"></i> Misión</a></li>
+        <li><a href="nosotros.html#Vision"><i class="fas fa-eye"></i> Visión</a></li>
+        <li><a href="nosotros.html#Valores"><i class="fas fa-heart"></i> Valores</a></li>
+      </ul>
+    </li>
+    <li class="has-sub">
+      <a href="producto.html">
+        <i class="fas fa-shopping-cart"></i> Productos
+        <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:2px;"></i>
+      </a>
+      <ul class="sub-menu">
+        <li><a href="producto.html#chocolates"><i class="fas fa-cookie-bite"></i> Chocolates</a></li>
+        <li><a href="producto.html#helados"><i class="fas fa-ice-cream"></i> Helados</a></li>
+        <li><a href="producto.html#cafes"><i class="fas fa-mug-hot"></i> Cafés</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="registro.html" class="cart-btn">
+        <i class="fas fa-shopping-basket"></i>
+        <span class="cart-badge">0</span>
+      </a>
+    </li>
+    <li>
+      <a href="registro.html" style="background:var(--marina,#879fd3);background:var(--marino);color:#fff!important;border-radius:40px;">
+        <i class="fas fa-user-plus"></i> Registro
+      </a>
+    </li>
+  </ul>
+
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- BANNER -->
+<section class="page-banner" style="padding-top:80px;">
+  <div class="banner-bg"><img src="banner nosotros 1.jpg" alt="Sobre Nosotros" style="width:100%;height:100%;object-fit:cover;"></div>
+  <div class="banner-overlay"></div>
+  <div style="position:relative;z-index:2;text-align:center;">
+    <h1 class="algerian" style="text-shadow: 2px 1px 4px rgb(70, 123, 184);">Sobre Nosotros</h1>
+  </div>
+</section>
+
+<!-- SUB-NAVEGACIÓN -->
+<nav class="sub-nav">
+  <a href="#mision" data-target="mision" class="active">Misión</a>
+  <a href="#vision" data-target="vision">Visión</a>
+  <a href="#valores" data-target="valores">Valores</a>
+</nav>
+
+<!-- ── HISTORIA ── -->
+<section class="section section-crema" >
+  <div class="about-section fade-up">
+    <div class="about-text">
+      <h2>Nuestra Historia</h2>
+      <p>Frees Cookie nació en el Distrito Nacional de Santo Domingo con una sola misión: elevar la experiencia de los postres artesanales en República Dominicana. Comenzamos como un pequeño taller de galletas crumble y hoy somos una cafetería con una completa experiencia gourmet.</p>
+      <p style="margin-top:16px;">Desde nuestras galletas de Chocolate Dubai hasta nuestros helados de temporada, cada producto es elaborado con ingredientes frescos y la pasión de nuestro equipo liderado por <strong>Obbie Johansel Arias</strong>.</p>
+    </div>
+    <div class="about-img">
+      <div style="width:100%;aspect-ratio:4/3;border-radius:24px;background:linear-gradient(135deg,#F9C6D0 0%,#BBDEFB 50%,#C8E6C9 100%);display:flex;align-items:center;justify-content:center;box-shadow:var(--sombra-lg);">
+        <div style="text-align:center;">
+          <div style="font-size:5rem;"><img src="baner 1 portada.jpg"></div>
+          <p style="font-family:'Playfair Display',serif;color:var(--marino);font-size:1.2rem;margin-top:10px;">Desde 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MISIÓN ── -->
+<section id="mision" class="section section-rosa">
+  <div class="about-section reverse fade-up">
+    <div class="about-text">
+      <p style="font-size:0.8rem;font-weight:700;letter-spacing:3px;color:var(--rosa-deep);text-transform:uppercase;margin-bottom:12px;"><i class="fas fa-bullseye"></i> Misión</p>
+      <h2>Nuestra Misión</h2>
+      <p>Ofrecer experiencias gastronómicas únicas a través de galletas artesanales, postres gourmet y bebidas especiales, elaborados con los mejores ingredientes locales e internacionales. Nos comprometemos a brindar un servicio excepcional que haga de cada visita un momento memorable para nuestros clientes en Santo Domingo y toda la República Dominicana.</p>
+    </div>
+    <div class="about-img">
+      <div style="width:100%;aspect-ratio:4/3;border-radius:24px;background:linear-gradient(135deg,#E8899A,#F9C6D0);display:flex;align-items:center;justify-content:center;box-shadow:var(--sombra-lg);">
+        <div style="text-align:center;">
+          <div style="font-size:5rem;"><img src="banner mision.jpg" alt="Misión"></div>
+          <p style="font-family:'Playfair Display',serif;color:#fff;font-size:1.1rem;margin-top:10px;">Excelencia en cada bocado</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── VISIÓN ── -->
+<section id="vision" class="section section-azul">
+  <div class="about-section fade-up">
+    <div class="about-text">
+      <p style="font-size:0.8rem;font-weight:700;letter-spacing:3px;color:var(--marino);text-transform:uppercase;margin-bottom:12px;"><i class="fas fa-eye"></i> Visión</p>
+      <h2>Nuestra Visión</h2>
+      <p>Convertirnos en la cafetería artesanal de referencia en el Caribe para el 2030, reconocida por la calidad innovadora de nuestros productos, la calidez de nuestro servicio y nuestro compromiso con la comunidad dominicana. Aspiramos a expandir la cultura de la pastelería artesanal, creando espacios donde cada bocado cuente una historia.</p>
+    </div>
+    <div class="about-img">
+      <div style="width:100%;aspect-ratio:4/3;border-radius:24px;background:linear-gradient(135deg,#64B5F6,#BBDEFB);display:flex;align-items:center;justify-content:center;box-shadow:var(--sombra-lg);">
+        <div style="text-align:center;">
+          <div style="font-size:5rem;"><img src="banner vision.jpg" alt="Visión"></div>
+          <p style="font-family:'Playfair Display',serif;color:var(--marino);font-size:1.1rem;margin-top:10px;">Líder del Caribe 2028</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── VALORES ── -->
+<section id="valores" class="section section-crema">
+  <div class="section-title fade-up">
+    <p style="font-size:0.8rem;font-weight:700;letter-spacing:3px;color:var(--rosa-deep);text-transform:uppercase;margin-bottom:8px;"><i class="fas fa-heart"></i> Valores</p>
+    <h2>Nuestros Valores</h2>
+    <p>Los principios que guían cada creación</p>
+  </div>
+  <div class="values-grid">
+    <div class="value-card fade-up">
+      <div class="value-icon">🌿</div>
+      <h3>Calidad</h3>
+      <p>Usamos solo los mejores ingredientes, frescos y cuidadosamente seleccionados para garantizar una experiencia gourmet en cada producto.</p>
+    </div>
+    <div class="value-card fade-up">
+      <div class="value-icon">🎨</div>
+      <h3>Creatividad</h3>
+      <p>Cada creación es una obra de arte. Innovamos constantemente con sabores, texturas y presentaciones que sorprenden.</p>
+    </div>
+    <div class="value-card fade-up">
+      <div class="value-icon">❤️</div>
+      <h3>Pasión</h3>
+      <p>Trabajamos con amor en cada galleta, cada postre y cada taza. La pasión es el ingrediente secreto de Frees Cookie.</p>
+    </div>
+    <div class="value-card fade-up">
+      <div class="value-icon">🤝</div>
+      <h3>Comunidad</h3>
+      <p>Somos parte del Distrito Nacional y nos comprometemos con el desarrollo social y económico de nuestra comunidad.</p>
+    </div>
+    <div class="value-card fade-up">
+      <div class="value-icon">✨</div>
+      <h3>Honestidad</h3>
+      <p>Transparencia en nuestros precios, ingredientes y procesos. Nuestros clientes merecen siempre la verdad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── EQUIPO ── -->
+<section class="team-section fade-up">
+  <h2 class="algerian">Nuestro Fundador</h2>
+  <div class="team-card">
+    <div class="team-avatar">👨‍🍳</div>
+    <h3>Obbie Johansel Arias</h3>
+    <p>Fundador &amp; Chef Pastelero</p>
+    <p style="margin-top:12px;font-size:0.85rem;">Apasionado de la gastronomía artesanal, Obbie fundó Frees Cookie con la visión de llevar los mejores sabores al Distrito Nacional.</p>
+    <span class="team-badge">Fundador · Frees Cookie</span>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3 class="algerian">Frees Cookie</h3>
+      <p>Cafetería artesanal en el corazón del Distrito Nacional. Galletas crumble, postres gourmet y cafés especiales.</p>
+      <div class="social-links" style="margin-top:20px;">
+        <a href="https://www.instagram.com/freescookie_01?igsh=MTE1ZjNzbTZwYjRiYQ%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/8097711732" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/@freezcookie_01?lang=es-419" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-house" style="width:16px;margin-right:6px;"></i>Inicio</a></li>
+        <li><a href="nosotros.html"><i class="fas fa-globe" style="width:16px;margin-right:6px;"></i>Nosotros</a></li>
+        <li><a href="producto.html"><i class="fas fa-cookie-bite" style="width:16px;margin-right:6px;"></i>Productos</a></li>
+        <li><a href="registro.html"><i class="fas fa-user-plus" style="width:16px;margin-right:6px;"></i>Registro</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Sobre nosotros</h4>
+      <ul>
+        <li><a href="#mision">Misión</a></li>
+        <li><a href="#vision">Visión</a></li>
+        <li><a href="#valores">Valores</a></li>
+        <li><a href="#historia">Historia</a></li>
+      </ul>
+    </div>
+    
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Frees Cookie · Obbie Johansel Arias · Distrito Nacional, Santo Domingo, República Dominicana</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
